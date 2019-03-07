@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET; //TCP
-    serv_addr.sin_addr.s_addr = inet_addr(argv[1]); //ip
+    serv_addr.sin_addr.s_addr = inet_addr(argv[1]); //ip 참고 :inet_addr(ip문자열) ipv4의 문자열을 4바이트 정수값의 ip주소로 변경
     serv_addr.sin_port = htons(atoi(argv[2]));  //port
 
     if(connect(sock, (sap)&serv_addr,sizeof(serv_addr))== -1)   //서버 연결
