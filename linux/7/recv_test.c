@@ -21,7 +21,7 @@ int main(void)
 	fd = serial_config(dev0);
 	signal(SIGINT, call_exit);
 
-	if(!(ret = setjmp(env)))
+	if(!(ret = setjmp(env))) //goto는 함수간에 점프가 불가능 jmp함수는 가능
 		for(;;)
 		{
 			send_data(fd,buf,len,50);

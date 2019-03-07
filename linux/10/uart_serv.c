@@ -30,7 +30,7 @@ void call_exit(int signo)
     close_dev(fd);
     close(clnt_sock);
     close(serv_sock);
-    longjmp(env,1); //setjump 값으로 longjmp(1,2)의 2번 값이 반환
+    longjmp(env,1); //setjump 값으로 longjmp(1,2)의 2번 값이 반환 setjump env에 저장된 포인터로 이동
 }
 
 int main(int argc, char **argv)
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
     if(clnt_sock == -1)
         err_handler("accept() error");
 
-    if(!(ret = setjmp(env)))
+    if(!(ret = setjmp(env))) //goto는 함수간에 점프가 불가능 jmp함수는 가능
        for(;;)
         {
             if((str_len = read(clnt_sock, msg, BUF_SIZE)) != 0)
