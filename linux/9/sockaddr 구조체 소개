@@ -1,0 +1,10 @@
+1. sockaddr 구조체란?
+리눅스/유닉스 시스템에서는 소켓(socket)의 통신 대상을 지정하기 위해서 주소(address)를 사용한다.
+이 주소를 표현하는데 사용하는 구조체가 sockaddr이다.
+bind함수나 connect함수의 2번째 매개변수로 sockaddr 형을 받는다.
+
+2.  sockaddr 종류
+sockaddr은 기본 형 구조체로 주소체게 따라 sockaddr_in(ipv4), sockaddr_un(unix) sockaddr_in6(ipv6)의 구조체로 형변환하여 사용한다.
+
+3. 주소체계 유형
+AF_INET(ipv4), AF_INET6(ipv6),AF_UNIX(unix)=AF_LOCAL(내부 파일 시스템에서 사용),AF_PACKET(raw packet 디바이스 드라이버 영역에서 사용)
