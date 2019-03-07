@@ -37,8 +37,8 @@ int main(int argc, char **argv)
 		err_handler("socket() error");
 	memset(&serv_addr, 0, sizeof(serv_addr)); //serv_addr 구조체 변수 공간 초기화
 	serv_addr.sin_family = AF_INET; //TCP 사용
-	serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-	serv_addr.sin_port = htons(atoi(argv[1]));//setting port
+	serv_addr.sin_addr.s_addr = htonl(INADDR_ANY); //호스트 데이터 정령방식(인텔 little endian)에서 네트워크 정렬 방식(big endian)으로 long형 매계변수를 정렬
+	serv_addr.sin_port = htons(atoi(argv[1]));//setting port 참고 -htons short형 데이터 정렬 변경
 
 	if(bind(serv_sock, (sap) & serv_addr, sizeof(serv_addr)) == -1)// socket에 ip주소와  포트 번호 연결(커널에서 알아서)
 		err_handler("bind() error");
