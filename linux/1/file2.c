@@ -12,6 +12,7 @@ int main(void)
 }
 
 /*
+open 함수를 사용할 경우 필요한 header - fcntl.h, sys/stat.h, sys/types.h
 open(경로,flag,mode)
 flag는 해당 경로의 파일을 어떤식으로 처리할 것인지를 나타낸다
 mode는 각 권한을 설정한다.
