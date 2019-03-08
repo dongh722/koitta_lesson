@@ -10,7 +10,7 @@ int main(void)
 	int fd;
 	int nw;
 	char text[64] ={0,};
-	scanf("Hellow Linux System Programming!\n",text);
+	strcpy("Hellow Linux System Programming!\n",text);
 	fd = open("text.txt", O_CREAT | O_WRONLY, 0644);
 	printf("fd = %d\n", fd);
 	
