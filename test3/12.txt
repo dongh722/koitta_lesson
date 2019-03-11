@@ -1,0 +1,4 @@
+apt-get install wget으로 wget을 설치
+www.kernel.org에서 해당 커널 검색
+wget http://www.kernel.org/pub/linux/kernel/v4.x/원하는 버전 또는 클릭해서 다운로드
+tar xvfj 압축파일명 으로 압축해제

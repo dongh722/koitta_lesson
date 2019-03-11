@@ -1,0 +1,6 @@
+task_struct의 mm_struct에서 User 영역의 가상메모리 공간을 관리한다.
+
+stack은 start_stack을 통해서 기록되고
+task의 경우 start_code, end_code에 의해서 기록된다.
+data는 start_data, end_data에 의해서 기록된다.
+heap은 start brk, brk에 의해서 기록된다.

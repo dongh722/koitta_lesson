@@ -1,0 +1,1 @@
+task_struct를 생성한다.

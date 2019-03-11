@@ -1,0 +1,2 @@
+Static Priority 0~99
+Dynamic Priority 100~139

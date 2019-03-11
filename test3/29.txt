@@ -1,0 +1,8 @@
+멀티테스킹은 CPU가 여러게의 task를 우선수위에 따라 여러번에 나눠서 처리하는 것으로 가능하게 한다.
+멀티테스킹 환경에서 process는 하나의 CPU를 가지고 경쟁을 버리게 된다.
+CPU가 한정되기 때문에 현재 동작이 불필요한 Process가 CPU의 레지스터를 잡고 있으면 다른 process는 동작을 못하게 된다. 
+이를 해결하기 위해서 현재 동작이 불필요한 process는 Wait queue에 위치하여 동작을 대기하게된다.
+현재 동작이 필요한 process는 run queue에 위치하여 cpu를 얻기위한 경쟁을 버리게 된다.
+현재까지 처리해야할 동작을 끝내고 다른 프로세서의 동작을 대기해야할 필요가 있는 process는 Run queue에서 wait queue로 넘어가게 된다.
+이때 context switching이 일어나는데 wait queue로 넘어가는 process의 register 정보는 thread_info에 저장된다.
+이러한 동작들은 시스템 스케줄러에 의해 관리된다.

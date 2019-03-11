@@ -1,0 +1,4 @@
+linux version 4.15.0-46-generic (buildd@lgw01-amd64-008) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10)) #49~16.04.1-Ubuntu SMP Tue Feb 12 17:45:24 UTC 2019
+확인 방법은
+cd ~/
+cat /proc/version
