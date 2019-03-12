@@ -1,0 +1,7 @@
+OS의 자원 관리 5가지
+
+1. Task
+2. Memory
+3. File System
+4. Device Driver
+5. network
