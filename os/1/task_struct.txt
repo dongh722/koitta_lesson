@@ -1,5 +1,0 @@
-thread_info context switching 관련 구조체
-참고 thread_union - kernal stack
-pid -process id
-tgid- thread group id
-참고 thread와 process가 생성 될때 마다 task_struct 생성
