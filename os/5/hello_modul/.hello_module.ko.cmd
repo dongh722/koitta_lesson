@@ -1,0 +1,1 @@
+cmd_/home/kiott01a/kiotta/os/5/hello_modul/hello_module.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/kiott01a/kiotta/os/5/hello_modul/hello_module.ko /home/kiott01a/kiotta/os/5/hello_modul/hello_module.o /home/kiott01a/kiotta/os/5/hello_modul/hello_module.mod.o ;  true

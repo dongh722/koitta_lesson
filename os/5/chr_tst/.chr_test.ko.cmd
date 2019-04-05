@@ -1,0 +1,1 @@
+cmd_/home/kiott01a/kiotta/os/5/chr_tst/chr_test.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/kiott01a/kiotta/os/5/chr_tst/chr_test.ko /home/kiott01a/kiotta/os/5/chr_tst/chr_test.o /home/kiott01a/kiotta/os/5/chr_tst/chr_test.mod.o ;  true
