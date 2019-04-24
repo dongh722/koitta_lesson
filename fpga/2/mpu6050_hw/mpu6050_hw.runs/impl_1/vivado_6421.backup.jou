@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 21 10:23:11 2019
+# Process ID: 6421
+# Current directory: /home/kiott01a/kiotta/fpga/1/mpu6050_hw/mpu6050_hw.runs/impl_1
+# Command line: vivado -log i2c_mpu6050_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source i2c_mpu6050_wrapper.tcl -notrace
+# Log file: /home/kiott01a/kiotta/fpga/1/mpu6050_hw/mpu6050_hw.runs/impl_1/i2c_mpu6050_wrapper.vdi
+# Journal file: /home/kiott01a/kiotta/fpga/1/mpu6050_hw/mpu6050_hw.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source i2c_mpu6050_wrapper.tcl -notrace

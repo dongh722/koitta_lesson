@@ -1,0 +1,6 @@
+set_property IOSTANDARD LVCMOS33 [get_ports IIC_0_0_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports IIC_0_0_sda_io]
+set_property PACKAGE_PIN V12 [get_ports IIC_0_0_scl_io]
+set_property PACKAGE_PIN W16 [get_ports IIC_0_0_sda_io]
+set_property DRIVE 12 [get_ports IIC_0_0_scl_io]
+set_property DRIVE 12 [get_ports IIC_0_0_sda_io]

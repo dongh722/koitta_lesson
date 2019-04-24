@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="i2c_mpu6050_processing_system7_0_0_synth_1" LaunchDir="/home/kiott01a/kiotta/fpga/1/mpu6050_hw/mpu6050_hw.runs/i2c_mpu6050_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/kiott01a/kiotta/fpga/1/mpu6050_hw/mpu6050_hw.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="i2c_mpu6050_processing_system7_0_0_synth_1"/>
+	</Run>
+</Runs>
+
