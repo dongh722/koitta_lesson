@@ -1,0 +1,6 @@
+rm 에서는 risk 구조라 register memory간 register register간 별도의 명령어를 가지고 있다.
+Str - register의 값을 메모리로 저장
+ldr - 메모리 값을 register로 load
+bl – blanch link(인텔 call)
+b -blach (인텔 jump)
+lsl- 왼쪽으로 시프트 연산

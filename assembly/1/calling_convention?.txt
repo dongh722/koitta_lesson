@@ -1,0 +1,16 @@
+calling convention (함수 호출 규약)
+arm
+- 인자가 4개일 때는 레지스터를 사용, 4개 이상일때는 stack
+(인텔은 stack에 저장)
+
+-함수 반환 값은 r0(인텔에서는 ax)
+
+-r7 시스템 콜(인텔에서는 ax)
+
+-sp 스텍 포인트 저장 (인텔의 rsp)
+
+-lr 복귀 주소 저장(인텔은 stack에 자장)
+
+-pc 명령어 목록(인텔에서 ip레지스터)
+
+-cpsr 인터럽트 enable 레지스터( 인텔의 eflags)
