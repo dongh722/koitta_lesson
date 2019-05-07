@@ -1,0 +1,2 @@
+UMA는 Uniform Memory Access의 약자로 프로세서끼리 같은 메모리를 공유하는 것을 말한다.
+NUMA는 Non-Uniform Memory Access의 약자로 각가의 프로세서는 별도의 메모리 공간을 같는다.

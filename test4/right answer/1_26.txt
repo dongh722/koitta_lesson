@@ -1,0 +1,277 @@
+2. 메모리 관리, 파일시스템 관리, 태스크 관리(프로세스 관리), 디바이스 드라이버 관리, 네트워크 관리
+
+3. 프로세스는 tgid 와 pid 값이 같다.
+   tgid 가 서로 같은 녀석들은 스레드로 하나의 프로세스에 묶여서 동작한다.
+
+4. task_struct
+
+5. 현재 구동중인 Task 에 대한 정보를 가르키는 포인터
+
+6. 2번에 위치하는 것이 좋다.
+   fork()는 같은 Task를 복사하게 된다.
+   그리고 다시 그 코드를 사용할 것이라면 CPU의 Instruction Cache, Data Cache를 재활용하는 것이 최고다.
+   결론적으로 Cache Affinity를 적극 활용하자는 것이다.
+
+7. 2번에 위치하는 것이 좋다.
+   이번에는 주어진 시간내에 0, 1, 3은 Scheduling을 수행할 수 없기 때문에
+   오히려 상대적으로 Task가 적은 2번에 배치하는 것이 좋다.
+   Cache Affinity를 포기할지라도 아예 Task를 동작시킬 기회가 없는것보다 좋기 때문이다.
+
+8. 메모리 접근 속도가 같은 것을 Bank라 한다.
+   그리고 Kernel에서 이들은 Node라 한다.
+   UMA는 모든 CPU가 메모리 접근 속도가 같은 SMP와 같은것을 의미한다.
+   NUMA는 CPU 마다 메모리 접근 속도가 다른 Intel의 i계열의 CPU군을 의미한다.
+   Linux Kernel에선 이를 contig_page_data를 통해 전역변수로 관리한다.
+   그리고 UMA의 경우엔 Node가 1개인데 pglist_data 구조체로 표현된다.
+   NUMA의 경우엔 Node가 2개 이상으로 pgdat_list라는 이름의 연결 리스트를 통해 관리된다.
+   NUMA의 경우엔 pglist_data가 여러개 연결되어 있다.
+
+9. Buddy 할당자가 메모리를 관리하는 방식에서 할당할 경우 Bitmap을 같이 고려하는 것은 확실히 Overhead다.
+   그러나 메모리를 해제하고 어떤 녀석이 어디에 얼마만큼 비어있는지 파악하는 것은
+   바로 이 Buddy Mechanism을 이용하면 굉장히 유용하다.
+   Order(0)일때는 총 8K를 비교하는데 4K, 4K의 공간에서 2개의 상태값이 같은지를 본다.
+   찾고자하는 것은 지금 이 공간의 Maximum이 얼마만큼 되는지를 찾아서
+   4K를 찾는다고하면 4K만 정확히 뗘주고
+   16K라면 16K를 떼주기 위한 의도다.
+   Order(1)일 경우에는 16K를 비교하게 된다.
+   8K와 8K의 상태값이 서로 같으면 역시 Bitmap을 0으로 표기하고
+   둘의 상태값이 다르면 1이 표기되면서 8K 공간을 활용할 수 있다는 의미가 된다.
+   둘다 사용하지 않을 경우에도 0인데 앞서 말했듯이 Maximum에 해당하는 공간을 가지고 있기 위함이다.
+
+10. Slab 할당자는 Buddy로부터 미리 Page를 할당받아서
+    32byte 부터 128K까지 적정한 수준의 크기로 분할을 하여 가지고 있다.
+    그리고 우리가 짜잘한 크기의 메모리 할당을 요청하면 미리 받아둔 이 조각들을 우리에게 넘겨준다.
+    내부적으로도 사용할 수 있는 공간이 존재하므로 Free, Full, Partial라는 상태 정보를 기록하여
+    새로 Free한 부분을 사용해야할지 Partial한 부분을 사용할지 결정할 수도 있다.
+
+11. inode는 File의 메타 데이터를 가지고 있으며
+    super_block은 파일시스템의 메타 데이터를 가지고 있다.
+
+12. sys_call_table
+
+13. eax, r7
+
+14. 레고와 같은 느낌으로 언제든지 쉽고 간편하게 탈부착이 가능한 형태다.
+    그렇기에 커널이 굉장히 가볍고 부팅 속도가 빠르다.
+
+15. 모든 기본적인 것들을 Built-in 하여 커널 이미지에 집어넣는다.
+    그렇기에 커널이 비교적 무겁고 부팅 속도는 마이크로 커널에 비해 느리다.
+
+16. Monolithic Kernel
+
+17. Device Driver는 Micro 커널의 장점을 따온 구조다.
+    드라이버가 언제든지 탈부착이 가능하기 때문에
+    드라이버에 대한 설치 이후 시스템을 재시작할 필요가 없다.
+
+18. module_init() 함수는 insmod 명령어로 Device Driver Module을 부착시킬때 동작한다.
+
+19. module_exit() 함수는 rmmod 명령어로 Driver Module을 탈착시킬때 동작한다.
+
+20. task_struct내에 files_struct내에 file내에 file_operations 구조체를 Wrapping 해야 한다.
+
+21. task_struct내에 files_struct 내에 file 내에 path 내에 dentry 내에 있는
+    inode 구조체에 존재하는 i_rdev 변수에 저장한다.
+
+22. Device Driver나 기타 여러 Kernel 내부의 Mechanism을 수행하는데 있어서
+    자료를 저장할 공간이 Kernel 역시 필요할 것이다.
+    그 공간을 확보하기 위해 Memory Allocation Mechanism이 Kernel에도 존재한다.
+
+23. 
+
+Makefile
+
+obj-m           := chr_test.o
+
+KERNEL_DIR      := /lib/modules/$(shell uname -r)/build
+PWD             := $(shell pwd)
+default:
+        $(MAKE) -C $(KERNEL_DIR) SUBDIRS=$(PWD) modules
+clean:
+        $(MAKE) -C $(KERNEL_DIR) SUBDIRS=$(PWD) clean
+
+
+
+chr_test.c
+
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <linux/slab.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/device.h>
+#include <asm/uaccess.h>
+
+#define DEVICE_NAME             "mydrv"
+#define MYDRV_MAX_LENGTH        4096
+#define MIN(a, b)               (((a) < (b)) ? (a) : (b))
+
+struct class *myclass;
+struct cdev *mycdev;
+struct device *mydevice;
+dev_t mydev;
+
+static int *write_ret;
+static int *read_ret;
+static char *mydrv_data;
+static int mydrv_read_offset, mydrv_write_offset;
+
+static int mydrv_open(struct inode *inode, struct file *file)
+{
+        printk("%s\n", __FUNCTION__);
+        return 0;
+}
+
+static int mydrv_release(struct inode *inode, struct file *file)
+{
+        printk("%s\n", __FUNCTION__);
+        return 0;
+}
+
+static int mydrv_read(struct file *file, char *buf, size_t count, loff_t *ppos)
+{
+#if 0
+        if((buf == NULL) || (count < 0))
+                return -EINVAL;
+        if(mydrv_write_offset - mydrv_read_offset <= 0)
+                return 0;
+        count = MIN((mydrv_write_offset - mydrv_write_offset), count);
+        if(copy_to_user(buf, mydrv_data + mydrv_read_offset, count))
+                return -EFAULT;
+        mydrv_read_offset += count;
+#endif
+        int i;
+
+        read_ret = (int *)kmalloc(sizeof(int), GFP_KERNEL);
+        read_ret[0] = 1;
+
+        for(i = 1; i <= count; i++)
+                read_ret[0] *= i;
+
+        return read_ret[0];
+}
+
+static ssize_t mydrv_write(struct file *file, const char *buf, size_t count, loff_t *ppos)
+{
+#if 0
+        if((buf == NULL) || (count < 0))
+                return -EINVAL;
+        if(count + mydrv_write_offset >= MYDRV_MAX_LENGTH)
+                return 0;
+        if(copy_from_user(mydrv_data + mydrv_write_offset, buf, count))
+                return -EFAULT;
+        mydrv_write_offset += count;
+#endif
+        int i;
+
+        write_ret = (int *)kmalloc(sizeof(int), GFP_KERNEL);
+        write_ret[0] = 0;
+
+        for(i = 1; i <= count; i++)
+                write_ret[0] += i;
+
+        return write_ret[0];
+}
+
+struct file_operations mydrv_fops = {
+        .owner = THIS_MODULE,
+        .read = mydrv_read,
+        .write = mydrv_write,
+        .open = mydrv_open,
+        .release = mydrv_release,
+};
+
+int mydrv_init(void)
+{
+        if(alloc_chrdev_region(&mydev, 0, 1, DEVICE_NAME) < 0)
+                return -EBUSY;
+
+        myclass = class_create(THIS_MODULE, "mycharclass");
+        if(IS_ERR(myclass))
+        {
+                unregister_chrdev_region(mydev, 1);
+                return PTR_ERR(myclass);
+        }
+
+        mydevice = device_create(myclass, NULL, mydev, NULL, "mydevicefile");
+        if(IS_ERR(mydevice))
+        {
+                class_destroy(myclass);
+                unregister_chrdev_region(mydev, 1);
+                return PTR_ERR(mydevice);
+        }
+
+        mycdev = cdev_alloc();
+        mycdev->ops = &mydrv_fops;
+        mycdev->owner = THIS_MODULE;
+
+        if(cdev_add(mycdev, mydev, 1) < 0)
+        {
+                device_destroy(myclass, mydev);
+                class_destroy(myclass);
+                unregister_chrdev_region(mydev, 1);
+                return -EBUSY;
+        }
+
+        mydrv_data = (char *)kmalloc(MYDRV_MAX_LENGTH * sizeof(char), GFP_KERNEL);
+        mydrv_read_offset = mydrv_write_offset = 0;
+        return 0;
+}
+
+void mydrv_cleanup(void)
+{
+        kfree(mydrv_data);
+        cdev_del(mycdev);
+        device_destroy(myclass, mydev);
+        class_destroy(myclass);
+        unregister_chrdev_region(mydev, 1);
+}
+
+module_init(mydrv_init);
+module_exit(mydrv_cleanup);
+MODULE_LICENSE("GPL");
+
+
+
+mydrv_test.c
+
+#include <stdio.h>
+#include <fcntl.h>
+
+#define MAX_BUFFER      26
+char bin[MAX_BUFFER];
+char bout[MAX_BUFFER];
+
+int main(void)
+{
+        int fd, i, c = 65; 
+        int write_ret, read_ret;
+
+        if((fd = open("/dev/mydevicefile", O_RDWR)) < 0)
+        {
+                perror("open()");
+                return -1; 
+        }
+
+        write_ret = write(fd, bout, 10);
+        read_ret = read(fd, bin, 5); 
+
+        printf("write_ret = %d, read_ret = %d\n", write_ret, read_ret);
+
+        close(fd);
+        return 0;
+}
+
+24. CISC와 RISC의 가장 큰 차이점은 다이 사이즈다.
+    CISC는 다이 사이즈가 크다보니 여러가지 기능 유닛들을 포함할 수 있다.
+    그러다보니 상대적으로 전력을 많이 소비하게 되는 면모를 보인다.
+    RISC는 다이 사이즈가 작다보니 CISC처럼 여러 기능 유닛들을 집어넣을 수 없다.
+    그러한 이유로 전력 소모량도 상대적으로 적다.
+    또한 Dynamic하게 서포팅을 해주는 것이 없으므로
+    Compiler의 최적화 알고리즘은 RISC 쪽이 더 신경을 많이 써야 한다.
+    (CISC 쪽은 HW가 어느정도 커버 해주므로)
+
+25. 분기(jmp or branch)가 발생했을 경우다.
+    분기가 발생하게되면 바로 아래에서 Fetch 및 Decode 해오던 값들이 무의미해지기 때문이다.
+
+26. 수업 내용 그림 그렸던것 참고
+

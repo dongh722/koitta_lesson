@@ -1,0 +1,1 @@
+process와 thread를 만들면 task를 생성한다.

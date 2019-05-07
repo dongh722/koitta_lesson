@@ -1,0 +1,1 @@
+Monolithic kernel은 사용자는 application만 건들수 있고 나머지의 system의 모든 것들은 커널영역에서 관리하는 커널이다. 코드가 방대하다.

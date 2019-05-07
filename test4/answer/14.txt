@@ -1,0 +1,1 @@
+Micro kernel은 운영체제가 필요로하는 최소한도의 기능만 담은 kernel이다. task memory, schedule등은 커널에서 관리한다. 그 밖에 custom한 부분(network, device driver)들은 유저단에 추가해서 관리한다. 비교적 짧은 코드 길이를 가지고 있다. 

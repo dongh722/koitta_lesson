@@ -1,0 +1,5 @@
+1. task 관리
+2. memory 관리
+3. file system
+4. 장치 관리
+5. 네트워크 관리

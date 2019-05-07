@@ -1,0 +1,2 @@
+CISC는 다양하고 복잡한 instruction set을 가지고 있다. instruction의 길이도 일정하지 않고 제각각이다.
+RISC는 CISC에 비해 단순한 instruction set을 가진다. instruction의 길이도 일정하다.

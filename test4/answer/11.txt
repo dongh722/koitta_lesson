@@ -1,0 +1,2 @@
+inode는 파일(장치든 폴던든)의 mode와 user 및 group id, 경로의 maping 주소, super_block 등의 내용을 포함하고 있다.
+super_block은 file system의 타입 super block이 있는 파일 시스템의 스택의 깊이, super_block의 이전과 그다음 list, block size 각종 super block operation의 함수 포인터들을 포함하고 있다.
