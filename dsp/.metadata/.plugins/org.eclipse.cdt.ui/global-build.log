@@ -1,0 +1,419 @@
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_epc.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_gio.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+Finished building: "../source/HL_gio.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_etpwm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_etpwm.d_raw" --obj_directory="source"  "../source/HL_etpwm.c"
+Finished building: "../source/HL_etpwm.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sci.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+Finished building: "../source/HL_sci.c"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "traffic_motor.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_errata.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_epc.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_gio.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+Finished building: "../source/HL_gio.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_etpwm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_etpwm.d_raw" --obj_directory="source"  "../source/HL_etpwm.c"
+Finished building: "../source/HL_etpwm.c"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sci.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+Finished building: "../source/HL_sci.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "traffic_motor.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:7: 'source/HL_sys_main.obj' 타겟에 대한 명령이 실패했습니다
+"../source/HL_sys_main.c", line 74: error #66: expected a ";"
+"../source/HL_sys_main.c", line 80: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8 *"
+"../source/HL_sys_main.c", line 81: error #31: expression must have integral type
+"../source/HL_sys_main.c", line 93: warning #225-D: function "memeset" declared implicitly
+"../source/HL_sys_main.c", line 93: error #18: expected a ")"
+"../source/HL_sys_main.c", line 96: warning #112-D: statement is unreachable
+3 errors detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] 오류 1
+gmake: 오류로 'all' 타겟을 다시 만들지 못했습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:7: 'source/HL_sys_main.obj' 타겟에 대한 명령이 실패했습니다
+"../source/HL_sys_main.c", line 79: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8 *"
+"../source/HL_sys_main.c", line 80: error #31: expression must have integral type
+"../source/HL_sys_main.c", line 92: warning #225-D: function "memeset" declared implicitly
+"../source/HL_sys_main.c", line 92: error #18: expected a ")"
+"../source/HL_sys_main.c", line 95: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] 오류 1
+gmake: 오류로 'all' 타겟을 다시 만들지 못했습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+ 
+>> Compilation failure
+source/subdir_rules.mk:7: 'source/HL_sys_main.obj' 타겟에 대한 명령이 실패했습니다
+"../source/HL_sys_main.c", line 92: warning #225-D: function "memeset" declared implicitly
+"../source/HL_sys_main.c", line 92: error #18: expected a ")"
+"../source/HL_sys_main.c", line 95: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../source/HL_sys_main.c".
+gmake: *** [source/HL_sys_main.obj] 오류 1
+gmake: 오류로 'all' 타겟을 다시 만들지 못했습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 92: warning #225-D: function "memeset" declared implicitly
+"../source/HL_sys_main.c", line 95: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined first referenced        
+  symbol       in file             
+ --------- ----------------        
+ memeset   ./source/HL_sys_main.obj
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "traffic_motor.out" not built
+ 
+>> Compilation failure
+makefile:159: 'traffic_motor.out' 타겟에 대한 명령이 실패했습니다
+makefile:155: 'all' 타겟에 대한 명령이 실패했습니다
+gmake[1]: *** [traffic_motor.out] 오류 1
+gmake: *** [all] 오류 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 95: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "traffic_motor.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'traffic_motor.out'은(는) 이미 업데이트되었습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 95: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "traffic_motor.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'traffic_motor.out'은(는) 이미 업데이트되었습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'traffic_motor.out'은(는) 이미 업데이트되었습니다.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/kiott01a/kiotta/dsp/traffic_motor" --include_path="/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --include_path="/home/kiott01a/kiotta/dsp/traffic_motor/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+"../source/HL_sys_main.c", line 94: warning #112-D: statement is unreachable
+Finished building: "../source/HL_sys_main.c"
+ 
+Building target: "traffic_motor.out"
+Invoking: ARM Linker
+"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"traffic_motor.map" --heap_size=0x800 --stack_size=0x800 -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/kiott01a/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="traffic_motor_linkInfo.xml" --rom_model --be32 -o "traffic_motor.out" "./source/HL_epc.obj" "./source/HL_errata.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "traffic_motor.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project traffic_motor ****
+
+/home/kiott01a/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'traffic_motor.out'은(는) 이미 업데이트되었습니다.
+
+**** Build Finished ****

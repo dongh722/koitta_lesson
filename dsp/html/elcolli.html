@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>First Animation</title>
+	<script type="text/javascript" src="jsLibs/three.js"></script>
+	<script type="text/javascript" src="jsLibs/stats.js"></script>
+	<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="Status-output">
+</div>
+<div id="WebGL-output">
+</div>
+
+<script type="text/javascript">
+	function init() {
+		var stats = initStats();
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(45,window.innerWidth / window.innerHeight, 0.1, 1000);
+		var renderer = new THREE.WebGLRenderer();
+
+		renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
+		renderer.setSize(window.innerHeight, window.innerWidth);
+		renderer.shadowMapEnabled = true;
+//밑 판
+		var planeGeometry = new THREE.PlaneGeometry(400, 100, 1, 1);
+		var planeMaterial = new THREE.MeshLambertMaterial({color: 0xffff00});
+		var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+		
+		plane.receiveShadow = true;
+
+		plane.rotation.x = -0.5 *Math.PI; // 회전
+		plane.position.x = 0;
+		plane.position.y = 0;
+		plane.position.z = 0;
+
+		//각 도형은 삼각형 합성
+		scene.add(plane);
+
+		var sphereGeometry = new THREE.SphereGeometry(6,20,20);//(반경,가로 step, 세로 step);
+		var sphereMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
+		var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+
+		sphere.position.x = 75;
+		sphere.position.y = 6;
+		sphere.position.z = 2;
+		sphere.castShadow = true;
+
+
+		scene.add(sphere);
+
+		camera.position.x = 0;
+		camera.position.y = 200;
+		camera.position.z = 600;
+		camera.lookAt(scene.position);
+
+		var ambientLight = new THREE.AmbientLight(0x0c0c0c);
+		scene.add(ambientLight);
+
+		var spotLight = new THREE.SpotLight(0xffffff);
+		spotLight.position.set(-30,700,60);
+		spotLight.castShadow = true;
+		scene.add(spotLight);
+
+		document.getElementById("WebGL-output").appendChild(renderer.domElement);
+		
+
+		var step =0;
+		var step2 =0;
+		var MPU_degree =70;
+		var theta =MPU_degree**Math.PI/180;
+		var	init_velo = 36;
+		var init_veloX = init_velo*Math.cos(theta);
+		var init_veloY = init_velo*Math.sin(theta);
+		var gravity = 10.0;
+		var elastic = 0.8
+		var veloY =0;
+		var sphereX = sphere.position.x;
+
+		renderScene();
+
+		function renderScene() {
+			stats.update();
+
+				step += 0.05
+			if((step-step2) > (2*init_veloY / gravity))
+			{
+				init_veloY = 0.8*init_veloY;
+				init_veloX = 0.8*init_veloX;
+				sphereX = sphere.position.x;
+				step2 = step;
+			}
+
+			if (sphere.position.x <-150)
+			{
+				step = 0;
+				step2 = 0;
+				init_veloY = init_velo*Math.sin(theta);
+				init_veloX = init_velo*Math.cos(theta);
+				sphereX = 75;
+			}
+
+			sphere.position.x = sphereX  - init_veloX*(step-step2);
+			sphere.position.y = 6 + init_veloY*(step-step2) -0.5*gravity*(step-step2)*(step-step2);
+			requestAnimationFrame(renderScene);
+			renderer.render(scene, camera);
+		}
+
+		function initStats() {
+			var stats = new Stats();
+
+			stats.setMode(0);
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.left	= '0px';
+			stats.domElement.style.top = '0px';
+
+		document.getElementById("Status-output").appendChild(stats.domElement);
+		return stats;
+		}
+	}
+	window.onload = init;
+</script>
+</body>
+</html>

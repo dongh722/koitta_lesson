@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title> Fourier transform</title>
+	<script type ="text/javascript" src="jsLibs/three.js"></script>
+	<script type ="text/havascript" src="jsLibs/stats.js"></script>
+	<style>
+		body {
+			margin : 0;
+			overflow: hidden;
+			position: absolute;
+			margin: auto;
+			top : 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+
+<div id = "WebGL-output">
+</div>
+
+<script type="text/javascript">
+	var SAMPLE_NUM = 10000;
+	var SAMPLING_FRQ = 36;//Hz
+	function init() {
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(45, window.innerWidth /window.innerHeight, 0.1, 1000);
+		var renderer = new THREE.WebGLRenderer();
+
+		renderer.setClearColorHex();
+		renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
+		renderer.setSize(window.innerWidth, window.innerHeight);
+
+		var planeGeometry = new THREE.PlaneGeometry(300,20,1,1,);
+		var planeMaterial = new THREE.MeshLambertMaterial({color: 0xff00ff});
+		var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+
+		plane.rotation.x = -0.5 *Math.PI;
+		plane.position.x = 0;
+		plane.position.y = 0;
+		plane.position.z = 0;
+		
+		scene.add(plane);
+/*
+		var i =0;
+		var step =0;
+		var data = [];
+		var X = [];
+
+		for(i =0; i<SAMPLE_NUM; i++)
+			data[i] = Math.sin(2*6*Math.PI*i/SAMPLING_FRQ);
+
+		for(i =0; step<20;i++)
+		{
+			X[i] = fourier_transf(step,data);
+			step += 0.1;
+		}
+
+		function fourier_transf(k,dt=[])
+		{
+			var i =0;
+			var sum =0;
+
+			for(i =0; i<SAMPLE_NUM;i++)
+			{
+				sum += dt[i]*Math.sin(2*Math.PI*i*k);
+			}
+			return sum;	
+		}
+		
+		var cubeGeometry = [];
+		var cubeMaterial = [];
+		var cube = [];
+
+		for(i=0; step<20;i++)
+		{
+			cubeGeometry[i] = new THREE.BoxGeometry(1,X[i],1);
+			cubeMaterial[i] = new THREE.MeshLamberMaterial({color:0xff0000});
+			cube = new THREE.Mesh(cubeGeometry[i], cubeMaterial[i]);
+			
+			cube.position.x = i*2;
+			cube.position.y = 0;
+			cube.position.z = 0;
+			
+			scene.add(cube);
+			step +=0.1
+		}*/
+
+		camera.position.x =0;
+		camera.position.y =10;
+		camera.position.z = 50;
+		camera.lookAt(scene.position);
+
+		document.getElementById("WebGL-output").appendChild(renderer.domElement);
+		renderer.render(scene,camera);
+	}
+	window.onload =init;
+</script>
+</body>
+</html>		
+
